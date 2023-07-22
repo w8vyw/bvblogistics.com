@@ -1,0 +1,38 @@
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 2px solid $light;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: $light;
+
+  @media screen and (max-width: $md) {
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+
+  transition: .3s ease-in-out;
+
+  &:hover, &:focus {background: $main-color;}
+
+  &:active {background: #5e993a;}
+}
+
+.btn--dark {
+  border: none;
+  background: $dark;
+
+  &:hover, &:focus {background: $main-color;}
+
+  &:active {background: #5e993a;}
+}
+
+.btn--green {
+  border: none;
+  background: $main-color;
+
+  &:hover, &:focus {background: $dark;}
+
+  &:active {background: #0c0d15;}
+}

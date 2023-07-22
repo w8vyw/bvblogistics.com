@@ -1,0 +1,38 @@
+.about {
+  margin-bottom: 90px;
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+
+    @media screen and (max-width: $lg) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    max-width: 45%;
+    min-height: 660px;
+    object-fit: cover;
+    object-position: center;
+
+    @media screen and (max-width: $lg) {
+      max-width: 100%;
+      min-height: auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

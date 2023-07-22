@@ -1,0 +1,36 @@
+.reviews {
+  margin-bottom: 90px;
+  min-height: 760px;
+  background: url("../../../img/bg/reviews.webp") no-repeat top;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 80px;
+  }
+
+  &__slide-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+  }
+
+  &__slide-text {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
+  &__slide-name {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $dark;
+  }
+
+  &__slider-pagination {
+    transform: translateY(-12px);
+  }
+}

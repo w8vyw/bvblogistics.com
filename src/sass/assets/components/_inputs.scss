@@ -1,0 +1,16 @@
+.input {
+  padding: 10px;
+  border: 1px solid $gray;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 24px;
+
+  &::placeholder {
+    color: $gray;
+  }
+
+  @media screen and (max-width: $md) {
+    padding: 8px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,100 @@
+// Root ----------------------------------------
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  .page {flex-grow: 1;}
+
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: $dark;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $dark;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $main-color;
+  border-radius: 8px;
+}
+
+::selection {
+  background: $main-color
+}
+
+// ----------------------------------------
+
+
+
+
+// ----------------------------------------
+
+.wrapper {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media screen and (max-width: $lg) {
+    padding: 0 15px;
+  }
+}
+
+// ----------------------------------------
+
+
+
+
+// ----------------------------------------
+
+.swiper {
+  .swiper-pagination-bullet-active {
+    background: $main-color;
+  }
+}
+
+// ----------------------------------------
+
+
+
+
+.logo {display: block;}
+
+
+
+
+// ----------------------------------------
+
+.to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 19px 13.5px;
+  background: $main-color;
+  border-radius: 50%;
+
+  .i-to-top {
+    width: 32px;
+    height: 19px;
+    fill: none;
+    stroke: white;
+    stroke-width: 3px;
+  }
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: .3s ease-in-out;
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+// ----------------------------------------
